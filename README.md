@@ -1,5 +1,6 @@
 [![Latest Stable Version](https://poser.pugx.org/rubyrainbows/io/version.svg)](https://packagist.org/packages/rubyrainbows/io)
 [![Total Downloads](https://poser.pugx.org/rubyrainbows/io/downloads.svg)](https://packagist.org/packages/rubyrainbows/io)
+[![Build Status](https://travis-ci.org/rubyrainbows/php-io.svg?branch=master)](https://travis-ci.org/rubyrainbows/php-io)
 
 # PHP IO
 
