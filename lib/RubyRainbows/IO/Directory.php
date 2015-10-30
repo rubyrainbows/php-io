@@ -20,8 +20,16 @@ namespace RubyRainbows\IO;
  */
 class Directory
 {
+    /**
+     * @var string
+     */
     private $path;
 
+    /**
+     * Constructs the directory instance
+     *
+     * @param string $path The path to the directory
+     */
     public function __construct ( $path )
     {
         $this->path = $path;
@@ -29,19 +37,19 @@ class Directory
 
     /**
      * Returns an array of all the files
-     * 
-     * @return array
+     *
+     * @return File[]
      */
     public function getFiles ()
     {
-        $dirty = scandir( $this->path );
+        $dirty = scandir($this->path);
         $clean = [];
 
         foreach ( $dirty as $file )
         {
             if ( $file != '.' and $file != '..' )
             {
-                $clean[] = new File( $this, $file );
+                $clean[] = new File($this, $file);
             }
         }
 
@@ -50,7 +58,7 @@ class Directory
 
     /**
      * Returns the path for the directory
-     * 
+     *
      * @return string
      */
     public function getPath ()

@@ -4,7 +4,7 @@
     "minimum-stability": "stable",
     "license": "MIT",
     "homepage": "https://github.com/rubyrainbows/php-io",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         {
             "name": "Thomas Muntaner",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "RubyRainbows\\": "lib/RubyRainbows/"
+            "RubyRainbows\\IO\\": "lib/RubyRainbows/IO"
         }
     }
 }
